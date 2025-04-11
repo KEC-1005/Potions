@@ -1,0 +1,12 @@
+linux:
+  vars:
+    ansible_user: ""
+    ansible_ssh_pass: ""
+    ansible_sudo_pass: ""
+    ansible_port: 22
+  hosts:
+    the-dam:
+      ansible_host: 0.0.0.0
+      ansible_user: benny
+      ansible_ssh_pass: ""
+      ansible_sudo_pass: ""

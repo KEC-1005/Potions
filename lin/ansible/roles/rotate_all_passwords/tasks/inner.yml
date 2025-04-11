@@ -1,0 +1,10 @@
+---
+
+- name: "Set user {{ item[0] }} password"
+  become: true
+  ansible.builtin.command: "usermod --password {{ item[1] }} {{ item[0] }}"
+  changed_when: true
+
+- name: Set ansible changelog
+  ansible.builtin.set_fact:
+    changelog: "{{ changelog + [item[0], item[2]] }}"

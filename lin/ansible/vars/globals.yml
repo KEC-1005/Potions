@@ -1,0 +1,4 @@
+---
+# Graylog Forwarder
+syslog_server: ""
+syslog_port: 514
