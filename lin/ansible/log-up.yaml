@@ -1,0 +1,5 @@
+- name: Setup Auditd and forward to Graylog
+  hosts: linux
+  roles:
+    - role: cfg_auditd
+    - role: graylog_forwarder
